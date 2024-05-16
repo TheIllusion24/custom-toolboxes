@@ -2,5 +2,5 @@
 
 set -ouex pipefail
 
-dnf install \
+dnf install -y \
     neovim
