@@ -3,9 +3,10 @@
 set -ouex pipefail
 
 dnf install -y \
-    neovim
+    gh \
+    neovim 
 
 # Dev
 dnf groupinstall -y \
-    "Development Tools" \
-    "Development Libraries"
+    "Development Libraries" \
+    "Development Tools"
