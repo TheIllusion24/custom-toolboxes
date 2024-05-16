@@ -6,6 +6,6 @@ dnf install -y \
     neovim
 
 # Dev
-dnf groupinstall \
+dnf groupinstall -y \
     "Development Tools" \
     "Development Libraries"
