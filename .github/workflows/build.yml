@@ -53,9 +53,7 @@ jobs:
 
     - name: Sign
       run: |
-        echo "${{ env.COSIGN_PRIVATE_KEY }}" > cosign.key
-        wc -c cosign.key
-        cosign sign -y --key cosign.key ghcr.io/theillusion24/fedora-toolbox@${TAGS}
+        cosign sign -y --key env://COSIGN_PRIVATE_KEY ghcr.io/theillusion24/fedora-toolbox@${TAGS}
       env:
         TAGS: ${{ steps.push.outputs.digest }}
         COSIGN_EXPERIMENTAL: false
