@@ -5,7 +5,8 @@ set -ouex pipefail
 dnf install -y \
     gh \
     neovim \
-    pinentry
+    pinentry \
+    pinentry-gnome3
 
 # Dev
 dnf groupinstall -y \
