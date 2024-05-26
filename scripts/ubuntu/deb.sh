@@ -2,12 +2,12 @@
 
 set -ouex pipefail
 
-apt update && apt upgrade
+apt update && apt upgrade -y
 
-apt install \
+apt install -y \
     gh \
     neovim \
     pinentry-gnome3
 
-apt install \
+apt install -y \
     build-essential
