@@ -1,5 +1,5 @@
 ## Source image
-FROM registry.fedoraproject.org/fedora-toolbox:40
+FROM ghcr.io/ublue-os/fedora-toolbox:latest
 
 ## Files
 COPY scripts /tmp/scripts
