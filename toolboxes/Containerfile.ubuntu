@@ -1,4 +1,4 @@
-FROM docker.io/library/ubuntu:24.04
+FROM ghcr.io/ublue-os/ubuntu-toolbox:latest
 
 COPY files /
 COPY scripts /tmp/scripts
