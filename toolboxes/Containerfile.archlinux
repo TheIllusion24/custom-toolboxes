@@ -3,4 +3,4 @@ FROM quay.io/toolbx/arch-toolbox:latest
 COPY files /
 COPY scripts /tmp/scripts
 
-RUN /tmp/scripts/archlinux
+RUN /tmp/scripts/archlinux/pacman.sh
