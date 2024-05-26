@@ -24,7 +24,7 @@ jobs:
       uses: redhat-actions/buildah-build@v2
       with:
         containerfiles: |
-          ./toolboxes/Containerfile.fedora
+          ./toolboxes/Containerfile.archlinux
         image: archlinux-toolbox-custom
         oci: false
 
