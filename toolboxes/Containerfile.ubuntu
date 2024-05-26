@@ -1,0 +1,6 @@
+FROM docker.io/library/ubuntu:24.04
+
+COPY files /
+COPY scripts /tmp/scripts
+
+RUN /tmp/scripts/ubuntu/deb.sh

@@ -6,6 +6,6 @@ COPY files /
 COPY scripts /tmp/scripts
 
 ## Run Scripts
-RUN /tmp/scripts/faster-dnf.sh && \
-    /tmp/scripts/rpm.sh && \
-    /tmp/scripts/vim-default-editor.sh
+RUN /tmp/scripts/fedora/faster-dnf.sh && \
+    /tmp/scripts/fedora/rpm.sh && \
+    /tmp/scripts/fedora/vim-default-editor.sh
