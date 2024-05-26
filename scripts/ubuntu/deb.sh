@@ -2,6 +2,8 @@
 
 set -ouex pipefail
 
+apt update && apt upgrade
+
 apt install \
     gh \
     neovim \
