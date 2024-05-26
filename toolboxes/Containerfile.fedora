@@ -2,6 +2,7 @@
 FROM ghcr.io/ublue-os/fedora-toolbox:latest
 
 ## Files
+COPY files /
 COPY scripts /tmp/scripts
 
 ## Run Scripts
