@@ -52,8 +52,7 @@ jobs:
 
     - name: Sign
       run: |
-        cosign sign -y --key env://COSIGN_PRIVATE_KEY ghcr.io/theillusion24/ubuntu-toolbox-custom
-@${TAGS}
+        cosign sign -y --key env://COSIGN_PRIVATE_KEY ghcr.io/theillusion24/ubuntu-toolbox-custom@${TAGS}
       env:
         TAGS: ${{ steps.push.outputs.digest }}
         COSIGN_EXPERIMENTAL: false
