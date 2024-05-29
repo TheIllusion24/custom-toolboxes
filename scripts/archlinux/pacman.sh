@@ -47,5 +47,5 @@ pacman -Sy --needed --noconfirm \
 
 pacman -Sy --noconfirm \
     github-cli \
-    neovim
-
+    neovim \
+    wl-clipboard

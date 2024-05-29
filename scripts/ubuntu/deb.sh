@@ -5,9 +5,8 @@ set -ouex pipefail
 apt update && apt upgrade -y
 
 apt install -y \
+    build-essential \
     gh \
     neovim \
-    pinentry-gnome3
-
-apt install -y \
-    build-essential
+    pinentry-gnome3 \
+    wl-clipboard
