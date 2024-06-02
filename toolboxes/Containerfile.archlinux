@@ -3,5 +3,4 @@ FROM ghcr.io/ublue-os/arch-distrobox:latest
 COPY files /
 COPY scripts /tmp/scripts
 
-RUN /tmp/scripts/archlinux/pacman.sh && \
-    echo 'test'
+RUN /tmp/scripts/archlinux/pacman.sh
