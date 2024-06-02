@@ -1,10 +1,10 @@
 name: build-fedora
 
 on:
+  pull_request:
   schedule:
     - cron: '00 05 * * *'
   push:
-    pull_request:
     branches:
       - main
     paths-ignore:
