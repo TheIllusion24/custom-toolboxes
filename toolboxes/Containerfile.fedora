@@ -8,4 +8,5 @@ COPY scripts /tmp/scripts
 ## Run Scripts
 RUN /tmp/scripts/fedora/faster-dnf.sh && \
     /tmp/scripts/fedora/rpm.sh && \
-    /tmp/scripts/fedora/vim-default-editor.sh
+    /tmp/scripts/fedora/vim-default-editor.sh &&
+    echo test
