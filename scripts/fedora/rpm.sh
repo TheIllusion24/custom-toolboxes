@@ -6,7 +6,8 @@ dnf install -y \
     gh \
     neovim \
     pinentry \
-    pinentry-gnome3
+    pinentry-gnome3 \
+    xeyes
 
 # Dev
 dnf groupinstall -y \
