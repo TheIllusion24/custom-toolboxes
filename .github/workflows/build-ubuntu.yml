@@ -69,6 +69,8 @@ jobs:
         containerfiles: |
           ./toolboxes/Containerfile.ubuntu
         image: ubuntu-toolbox-custom
+        tags: |
+          ${{ steps.generate-tags.outputs.alias_tags }}
         oci: false
 
     - name: Push GHCR
