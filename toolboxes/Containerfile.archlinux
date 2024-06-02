@@ -1,4 +1,4 @@
-FROM quay.io/toolbx/arch-toolbox:latest
+FROM ghcr.io/ublue-os/arch-distrobox:latest
 
 COPY files /
 COPY scripts /tmp/scripts
