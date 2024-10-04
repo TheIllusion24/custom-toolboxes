@@ -94,7 +94,7 @@ jobs:
         username: ${{ GITHUB.ACTOR }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
-    - uses: sigstore/cosign-installer@v3.6.0
+    - uses: sigstore/cosign-installer@v3.7.0
 
     - name: Sign
       run: |
