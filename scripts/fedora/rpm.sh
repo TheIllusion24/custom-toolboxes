@@ -9,6 +9,6 @@ dnf install -y \
     pinentry-gnome3
 
 # Dev
-dnf groupinstall -y \
-    "Development Libraries" \
-    "Development Tools"
+dnf group install -y \
+    development-libs \
+    development-tools
